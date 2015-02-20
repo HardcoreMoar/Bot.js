@@ -1199,9 +1199,6 @@
             API.sendChat('/cap 78');
             API.setVolume(50);
             $("#woot").click();
-            var emojibutton = $(".icon-emoji-off");
-            if (emojibutton.length > 1) {
-                emojibutton[1].click();
             }
             loadChat(API.sendChat(subChat(trapbot.chat.online, {botname: trapbot.settings.botName, version: trapbot.version})));
         },
