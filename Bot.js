@@ -189,15 +189,15 @@
             maximumAfk: 120,
             afkRemoval: false,
             maximumDc: 60,
-            bouncerPlus: true,
-            blacklistEnabled: true,
+            bouncerPlus: false,
+            blacklistEnabled: false,
             lockdownEnabled: false,
             lockGuard: false,
             maximumLocktime: 10,
             cycleGuard: true,
             maximumCycletime: 10,
             voteSkip: false,
-            voteSkipLimit: 7,
+            voteSkipLimit: 2,
             timeGuard: true,
             maximumSongLength: 8,
             autodisable: true,
@@ -1199,9 +1199,9 @@
             API.sendChat('/cap 78');
             API.setVolume(50);
             $("#woot").click();
-            var emojibutton = $(".icon-emoji-on");
-            if (emojibutton.length > 0) {
-                emojibutton[0].click();
+            var emojibutton = $(".icon-emoji-off");
+            if (emojibutton.length > 1) {
+                emojibutton[1].click();
             }
             loadChat(API.sendChat(subChat(trapbot.chat.online, {botname: trapbot.settings.botName, version: trapbot.version})));
         },
