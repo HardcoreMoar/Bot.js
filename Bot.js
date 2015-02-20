@@ -173,7 +173,7 @@
     var trapbot = {
         version: "4.6.9",
         status: false,
-        name: "EDM-Nation bot",
+        name: "Turk",
         loggedInID: null,
         scriptLink: "https://rawgit.com/EDM-Birthday/EDM-Nation-Bot/Bot.js/Bot.js",
         cmdLink: "http://goo.gl/qPOuYn",
@@ -199,7 +199,7 @@
             voteSkip: false,
             voteSkipLimit: 7,
             timeGuard: true,
-            maximumSongLength: 6,
+            maximumSongLength: 8,
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
